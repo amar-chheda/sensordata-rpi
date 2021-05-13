@@ -3,24 +3,25 @@
 
 /* sensor table stores all the information about various sensors */
 CREATE TABLE IF NOT EXISTS sensorData.sensors (
-    sensorID INT PRIMARY KEY,
-    sensorName VARCHAR(25) NOT NULL,
-    units VARCHAR(10) NOT NULL
+    sensor_id INT PRIMARY KEY,
+    sensor_name VARCHAR(25) NOT NULL,
+    units VARCHAR(10) NOT NULL,
+    sensor_description VARCHAR(250)
 );
 
 /* users table keeps track of user using this service 
  In future this table can also save login / demographic information */
 CREATE TABLE IF NOT EXISTS sensorData.users (
-    userID VARCHAR(36) PRIMARY KEY
+    uuid VARCHAR(36) PRIMARY KEY
 );
 
 /* table to store time data as UNIX values
 UNIX values calculate seconds from 01-01-1970 in UTC +0 */
 CREATE TABLE IF NOT EXISTS sensorData.time (
-    timeID PRIMARY KEY,
+    time_id PRIMARY KEY,
     time_stamp INT NOT NULL,
-    FOREIGN KEY (sensorID) REFERENCES sensors(sensorID),
-    FOREIGN KEY (userID) REFERENCES users(userID) 
+    FOREIGN KEY (sensor_id) REFERENCES sensors(sensor_id),
+    FOREIGN KEY (uuid) REFERENCES users(uuid) 
 );
 
 /* table to count number of steps */
