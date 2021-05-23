@@ -5,3 +5,4 @@
 *.ipynb
 *.json
 __pycache__
+*.log
