@@ -10,7 +10,7 @@ def create_connection(db_file: str) -> Connection:
     try:
         conn = sqlite3.connect(db_file)
         logger.success(" CREATED DATABASE CONNECTION SUCCESSFULLY ")
-        logger.info("SQLITE 3 VERSION - {}".format(sqlite3.version))
+        logger.info("SQLITE 3 VERSION - {}".format(sqlite3.sqlite_version))
     
     except Error as e:
         logger.error(" DATABASE CONNECTION FAILED WITH ERROR - {}".format(e))

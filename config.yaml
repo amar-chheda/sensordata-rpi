@@ -1,0 +1,13 @@
+### stores all the configuration settings
+
+### database config
+database_name: sensorData.db
+database_path: ./db/database/
+
+### log file configs
+log_file: sensorData.log
+log_file_path: ./logs  
+
+### sql file configs
+sql_scripts_path: ./sql_scripts
+create_db_file: database_schema.sql
