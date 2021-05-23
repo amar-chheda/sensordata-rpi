@@ -1,0 +1,8 @@
+.vscode/
+.python-version
+.DS_Store
+*.zip
+*.ipynb
+*.json
+__pycache__
+*.log

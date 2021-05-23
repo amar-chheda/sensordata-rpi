@@ -1,0 +1,28 @@
+### database insert statements
+
+insert_queries: 
+  uuid: INSERT INTO users(uuid) VALUES(?)
+  time: INSERT INTO time(timeID, time_stamp, sensor_id, uuid) VALUES(?,?,?,?)
+  Step counter: INSERT INTO stepCounter(number_of_steps, timeID) VALUES(?,?)
+  Stationary detect: INSERT INTO stationaryDetect(stationary, timeID) VALUES(?,?)
+  Rotation vector: INSERT INTO rotationVector(x_axis, y_axis, z_axis, w_axis, EHA, timeID) VALUES(?,?,?,?,?,?)
+  Proximity: INSERT INTO proximity(proximity_dist, timeID) VALUES(?,?)
+  Magnetic field uncalibrated: INSERT INTO magneticFieldUncalibrated(x_axis, y_axis, z_axis, xb_axis, yb_axis, zb_axis, timeID) VALUES(?,?,?,?,?,?,?)
+  Pressure: INSERT INTO pressure(pressure_applied, timeID) VALUES(?,?)
+  Motion detect: INSERT INTO motionDetect(motion_detection, timeID) VALUES(?,?)
+  Step detector: INSERT INTO stepDetector(step_detection, timeID) VALUES(?,?)
+  Linear acceleration: INSERT INTO linearAcceleration(x_axis, y_axis, z_axis, timeID) VALUES(?,?,?,?)
+  Significant motion: INSERT INTO significantMotion(significant_motion, timeID) VALUES(?,?)
+  Gravity: INSERT INTO gravity(x_axis, y_axis, z_axis, timeID) VALUES(?,?,?,?)
+  Gyroscope: INSERT INTO gyroscope(x_axis, y_axis, z_axis, timeID) VALUES(?,?,?,?)
+  Game rotation vector: INSERT INTO gameRotationVector(x_axis, y_axis, z_axis, timeID) VALUES(?,?,?,?)
+  Gyroscope uncalibrated: INSERT INTO gyroscopeUncalibrated(x_axis, y_axis, z_axis, xd_axis, yd_axis, zd_axis, timeID) VALUES(?,?,?,?,?,?,?)
+  Light: INSERT INTO light(light_lux, timeID) VALUES(?,?)
+  Magnetic field: INSERT INTO magneticField(x_axis, y_axis, z_axis, timeID) VALUES(?,?,?,?)
+  Accelerometer uncalibrated: INSERT INTO accelerometerUncalibrated(x_axis, y_axis, z_axis, xc_axis, yc_axis, zx_axis, timeID) VALUES(?,?,?,?,?,?,?)
+  Accelerometer: INSERT INTO accelerometer(x_axis, y_axis, z_axis, timeID) VALUES(?,?,?,?)
+  Heart rate: INSERT INTO heartRate(heart_rate, timeID) VALUES(?,?)
+  Orientation: INSERT INTO orientation(azimuth, pitch, roll, timeID) VALUES(?,?,?,?)
+  Location: INSERT INTO location(latitude, longitude, altitude, timeID) VALUES(?,?,?,?)
+
+
