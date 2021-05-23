@@ -1,0 +1,126 @@
+{
+    "uuid": "7684BAF3-CA8C-4773-86C6-BF9CFD3A62A7",
+    "task": "test",
+    "timestamp": 1620512989273,
+    "sensors": [
+        {
+            "name": "Step counter",
+            "value0": 1282.0
+        },
+        {
+            "name": "Stationary detect",
+            "value0": None
+        },
+        {
+            "name": "Rotation vector",
+            "value0": 0.2952524,
+            "value1": -0.06593119,
+            "value2": -0.23806155,
+            "value3": 0.9229333,
+            "value4": "0.0 rad"
+        },
+        {
+            "name": "Proximity",
+            "value0": "8.0 cm"
+        },
+        {
+            "name": "Magnetic field uncalibrated",
+            "value0": "-140.7801 uT",
+            "value1": "0.90928537 uT",
+            "value2": "-340.70102 uT",
+            "value3": "-125.931046 uT",
+            "value4": "38.905613 uT",
+            "value5": "-288.98233 uT"
+        },
+        {
+            "name": "Pressure",
+            "value0": "1012.20776 hPa"
+        },
+        {
+            "name": "Motion detect",
+            "value0": None
+        },
+        {
+            "name": "Step detector",
+            "value0": None
+        },
+        {
+            "name": "Linear acceleration",
+            "value0": "0.040770516 m/s^2",
+            "value1": "0.016606808 m/s^2",
+            "value2": "0.04661894 m/s^2"
+        },
+        {
+            "name": "Significant motion",
+            "value0": None
+        },
+        {
+            "name": "Gravity",
+            "value0": "-0.18511331 m/s^2",
+            "value1": "5.652435 m/s^2",
+            "value2": "8.011623 m/s^2"
+        },
+        {
+            "name": "Gyroscope",
+            "value0": "0.020186938 rad/s",
+            "value1": "0.028855909 rad/s",
+            "value2": "0.0111301225 rad/s"
+        },
+        {
+            "name": "Game rotation vector",
+            "value0": 0.20098847,
+            "value1": 0.22610737,
+            "value2": 0.6912717
+        },
+        {
+            "name": "Gyroscope uncalibrated",
+            "value0": "0.012217294 rad/s",
+            "value1": "0.0073303767 rad/s",
+            "value2": "0.010995565 rad/s",
+            "value3": "-0.005526184 rad/s",
+            "value4": "-0.02519072 rad/s",
+            "value5": "-1.3455788E-4 rad/s"
+        },
+        {
+            "name": "Light",
+            "value0": "73.0 lux"
+        },
+        {
+            "name": "Magnetic field",
+            "value0": "-14.84906 uT",
+            "value1": "-37.996326 uT",
+            "value2": "-51.71869 uT"
+        },
+        {
+            "name": "Accelerometer uncalibrated",
+            "value0": "-0.16040461 m/s^2",
+            "value1": "5.573462 m/s^2",
+            "value2": "7.9388313 m/s^2",
+            "value3": "0.0 m/s^2",
+            "value4": "0.0 m/s^2",
+            "value5": "0.0 m/s^2"
+        },
+        {
+            "name": "Accelerometer",
+            "value0": "-0.16040461 m/s^2",
+            "value1": "5.573462 m/s^2",
+            "value2": "7.9388313 m/s^2"
+        },
+        {
+            "name": "Heart rate",
+            "value0": "null bpm"
+        },
+        {
+            "name": "Orientation",
+            "value0": "29.22539 deg",
+            "value1": "-35.193466 deg",
+            "value2": "-1.3179637 deg"
+        },
+        {
+            "name": "Location",
+            "value0": "29.69118062 deg",
+            "value1": "-95.39605116 deg",
+            "value2": "-7.537689208984375 m"
+        }
+    ]
+}
