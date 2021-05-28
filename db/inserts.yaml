@@ -1,8 +1,8 @@
 ### database insert statements
 
 insert_queries: 
-  uuid: INSERT INTO users(uuid) VALUES(?)
-  time: INSERT INTO time(timeID, time_stamp, sensor_id, uuid) VALUES(?,?,?,?)
+  uuid: INSERT OR IGNORE INTO users(uuid) VALUES(?)
+  time: INSERT INTO timeDetails(timeID, time_stamp, sensor_id, uuid) VALUES(?,?,?,?)
   Step counter: INSERT INTO stepCounter(number_of_steps, timeID) VALUES(?,?)
   Stationary detect: INSERT INTO stationaryDetect(stationary, timeID) VALUES(?,?)
   Rotation vector: INSERT INTO rotationVector(x_axis, y_axis, z_axis, w_axis, EHA, timeID) VALUES(?,?,?,?,?,?)
@@ -19,10 +19,10 @@ insert_queries:
   Gyroscope uncalibrated: INSERT INTO gyroscopeUncalibrated(x_axis, y_axis, z_axis, xd_axis, yd_axis, zd_axis, timeID) VALUES(?,?,?,?,?,?,?)
   Light: INSERT INTO light(light_lux, timeID) VALUES(?,?)
   Magnetic field: INSERT INTO magneticField(x_axis, y_axis, z_axis, timeID) VALUES(?,?,?,?)
-  Accelerometer uncalibrated: INSERT INTO accelerometerUncalibrated(x_axis, y_axis, z_axis, xc_axis, yc_axis, zx_axis, timeID) VALUES(?,?,?,?,?,?,?)
+  Accelerometer uncalibrated: INSERT INTO accelerometerUncalibrated(x_axis, y_axis, z_axis, xc_axis, yc_axis, zc_axis, timeID) VALUES(?,?,?,?,?,?,?)
   Accelerometer: INSERT INTO accelerometer(x_axis, y_axis, z_axis, timeID) VALUES(?,?,?,?)
   Heart rate: INSERT INTO heartRate(heart_rate, timeID) VALUES(?,?)
   Orientation: INSERT INTO orientation(azimuth, pitch, roll, timeID) VALUES(?,?,?,?)
-  Location: INSERT INTO location(latitude, longitude, altitude, timeID) VALUES(?,?,?,?)
+  Location: INSERT INTO locations(latitude, longitude, altitude, timeID) VALUES(?,?,?,?)
 
 

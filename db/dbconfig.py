@@ -2,7 +2,7 @@ import sqlite3
 from sqlite3 import Error, Connection, Cursor
 from loguru import logger
 
-
+@logger.catch
 def create_connection(db_file: str) -> Connection:
 
     conn = None
@@ -18,7 +18,7 @@ def create_connection(db_file: str) -> Connection:
     if conn:
         return conn
 
-
+@logger.catch
 def create_database(connection: Connection, sql_script: str) -> Cursor:
 
     cursor = connection.cursor()
