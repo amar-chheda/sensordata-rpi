@@ -11,3 +11,7 @@ log_file_path: ./logs
 ### sql file configs
 sql_scripts_path: ./sql_scripts
 create_db_file: database_schema.sql
+sensor_table: sensor_inserts.sql
+
+### sql insert queries
+sql_inserts: ./db/inserts.yaml
